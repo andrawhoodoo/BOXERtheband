@@ -115,10 +115,26 @@ nav {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1000x1000/?calm');
 	background-size: cover;
 	height: 95vh;
-
 }
 
 
+
+
+/***********************/
+/*--------ABOUT--------*/
+/***********************/
+
+.about-header {
+	height: 8vh;
+	background-color: rgba(223, 185, 146, 0.87)
+}
+
+.header-img-splash {
+	float: right;
+	margin-top: -57px;
+	margin-right: -20px;
+	overflow-y: hidden;
+}
 
 
 
