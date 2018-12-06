@@ -1,10 +1,11 @@
 /*********/
-/*#1c1c1c*/
+/*#DFB992*/
+/*#222****/
 /*********/
 
 
 /********************/
-/*-----SETUP-----*/
+/*-----SETUP--------*/
 /********************/
 
 * {
@@ -20,30 +21,67 @@ body {
     color: #fff;
 }
 
-/********************/
-/*-----HEADER-----*/
-/********************/
 
-header {
-    background-color: #1c1c1c;
-    height: 8vh;
+/**************************/
+/*-----REUSABLE ITEMS-----*/
+/**************************/
+
+.container {
+	margin: 0 40px;
 }
 
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #aaa;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/********************/
+/*-----NAVIGATION-----*/
+/********************/
+
+nav {
+	box-shadow: 0 4px 4px #222;
+    background-color: #222;
+    height: 5vh;
+}
+
+
 #logo-name {
-    font-size: 175%;
     display: inline-block;
-    margin-top: 12px;
     margin-left: 10px;
+	margin-top: 5px;
+	font-size: 150%;
+	font-weight: 500;
+	
+}
+
+.logo-link:link,
+.logo-link:visited {
+	color: #DFB992;
+	cursor: default;
 }
 
 .logo {
     float: left;
 }
+
+.logo img {
+	height: 70px;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+
 .nav-links {
     float: right;
     list-style: none;
-    margin-top: 20px;
-    margin-right: 40px;
+    margin-top: .5em;
 }
 
 .nav-links li {
@@ -53,35 +91,95 @@ header {
 
 .nav-links li a:link,
 .nav-links li a:visited {
-    padding-bottom: 22px;
-    color: #fff;
-    text-decoration: none;
+    padding-bottom: .5em;
     text-transform: uppercase;
     font-size: 90%;
+	font-weight: 500;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.1s;
 }
 
 .nav-links li a:hover,
 .nav-links li a:active {
+	color: #fff;
     border-bottom: 3px solid #fff;
     transition: border-bottom 0.1s;
 }
 
+
+/***********************/
+/*------MAIN PAGE------*/
+/***********************/
+
+#main-page {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1000x1000/?calm');
+	background-size: cover;
+	height: 95vh;
+
+}
+
+
+
+
+
+
 /********************/
-/*-----FOOTER-----*/
+/*------FOOTER------*/
 /********************/
 
 footer {
-    background-color: #1c1c1c;
+    background-color: #222;
+	height: 10vh;
+	padding-top: 1em
+}
+
+footer .container {
+	text-align: center;
 }
 
 
-footer ul {
+.social-links {
     list-style: none;
 }
 
-footer li {
+.social-links li {
     display: inline;
+	padding: 0 2%;
 }
+
+/***** Link Hover Effects ****/
+
+
+.fb:hover,
+.fb:active {
+	color: #3b5998;
+}
+
+.sp:hover,
+.sp:active {
+	color: #1DB954;
+}
+
+.sc:hover,
+.sc:active {
+	color: #f70;
+}
+
+.yt:hover,
+.yt:active {
+	color: #f00;
+}
+
+.ap:hover,
+.ap:active {
+	color: #fff;
+}
+
+.in:hover,
+.in:active {
+	color: #8a3ab9;
+}
+
+
+
 
