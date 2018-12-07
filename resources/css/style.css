@@ -69,8 +69,9 @@ a:visited {
 	right: 0;
 	top: 0;
 	overflow-y: hidden;
-	margin-right: 50px;
-	margin-top: -20px;
+	margin-right: 130px;
+	margin-top: 15px;
+    width: 150px
 }
 
 /********************/
@@ -141,8 +142,8 @@ nav {
 
 .nav-links .active:hover,
 .nav-links .active:active {
-	color: #aaa;
-	border-bottom: 3px solid transparent;
+	color: #556DA0;
+	border-bottom: 3px solid #556DA0;
 	
 }
 
@@ -163,7 +164,7 @@ nav {
 #main-page {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1000x1000/?calm');
 	background-size: cover;
-	height: 95vh;
+	height: 100vh;
 }
 
 
@@ -173,10 +174,14 @@ nav {
 /*--------ABOUT--------*/
 /***********************/
 
-.about-header {
-	background-color: rgba(223, 185, 146, 0.87);  //#DFB992
-	color: #372B3A;  //Deep purple
+.about-text {
+    color: #556DA0;
 }
+
+.about-header {
+	background-color: #DFB992;
+}
+
 
 
 
