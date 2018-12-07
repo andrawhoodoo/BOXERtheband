@@ -27,7 +27,7 @@ body {
 /**************************/
 
 .container {
-	margin: 0 40px;
+	margin: 0 50px;
 }
 
 a:link,
@@ -40,16 +40,45 @@ a:visited {
 	clear: both;
 }
 
+.active {
+	cursor: default;
+}
 
+.nav-avoid {
+	padding-top: 45px;
+}
+
+.header {
+	height: 67px;
+}
+
+.header-title {
+	margin-left: 80px;
+	font-style: italic;
+	font-size: 320%;
+	font-weight: 200;
+}
+
+.header-img-splash {
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow-y: hidden;
+	margin-right: 50px;
+	margin-top: -20px;
+}
 
 /********************/
 /*-----NAVIGATION-----*/
 /********************/
 
 nav {
+	position: fixed;
+	width: 100%;
 	box-shadow: 0 4px 4px #222;
     background-color: #222;
-    height: 5vh;
+	height: 45px;
+	z-index: 9999;
 }
 
 
@@ -65,7 +94,6 @@ nav {
 .logo-link:link,
 .logo-link:visited {
 	color: #DFB992;
-	cursor: default;
 }
 
 .logo {
@@ -91,7 +119,7 @@ nav {
 
 .nav-links li a:link,
 .nav-links li a:visited {
-    padding-bottom: .5em;
+    padding-bottom: 10px;
     text-transform: uppercase;
     font-size: 90%;
 	font-weight: 500;
@@ -106,6 +134,22 @@ nav {
     transition: border-bottom 0.1s;
 }
 
+.nav-links .active:hover,
+.nav-links .active:active {
+	color: #aaa;
+	border-bottom: 3px solid transparent;
+	
+}
+
+.nav-links .active:link,
+.nav-links .active:visited {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: -10px;
+	border-left: 3px solid #aaa;
+	border-right: 3px solid #aaa;
+	border-radius: 3px;
+}
 
 /***********************/
 /*------MAIN PAGE------*/
@@ -125,16 +169,10 @@ nav {
 /***********************/
 
 .about-header {
-	height: 8vh;
-	background-color: rgba(223, 185, 146, 0.87)
+	background-color: rgba(223, 185, 146, 0.87);
 }
 
-.header-img-splash {
-	float: right;
-	margin-top: -57px;
-	margin-right: -20px;
-	overflow-y: hidden;
-}
+
 
 
 
