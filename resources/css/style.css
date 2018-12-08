@@ -70,8 +70,8 @@ a:visited {
 	top: 0;
 	overflow-y: hidden;
 	margin-right: 130px;
-	margin-top: 15px;
-    width: 150px
+	margin-top: 10px;
+    width: 200px
 }
 
 /********************/
@@ -81,8 +81,8 @@ a:visited {
 nav {
 	position: fixed;
 	width: 100%;
-	box-shadow: 0 4px 4px #222;
-    background-color: #222;
+	box-shadow: 0 4px 4px #000;
+    background-color: #000;
 	height: 45px;
 	z-index: 9999;
 }
@@ -97,11 +97,6 @@ nav {
 	
 }
 
-.logo-link:link,
-.logo-link:visited {
-	color: #DFB992;
-}
-
 .logo {
     float: left;
 }
@@ -110,6 +105,14 @@ nav {
 	height: 70px;
 	margin-top: -10px;
 	margin-right: 10px;
+}
+
+
+/***Link looks and effects****/
+
+.logo-link:link,
+.logo-link:visited {
+	color: #DFB992;
 }
 
 .nav-links {
@@ -129,32 +132,64 @@ nav {
     text-transform: uppercase;
     font-size: 90%;
 	font-weight: 500;
-    border-bottom: 3px solid transparent;
     transition: border-bottom 0.1s;
 }
 
 .nav-links li a:hover,
 .nav-links li a:active {
-	color: #fff;
-    border-bottom: 3px solid #fff;
     transition: border-bottom 0.1s;
 }
 
-.nav-links .active:hover,
-.nav-links .active:active {
+.nav-links .about-link:hover,
+.nav-links .about-link:active {
 	color: #556DA0;
 	border-bottom: 3px solid #556DA0;
 	
 }
 
-.nav-links .active:link,
-.nav-links .active:visited {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-right: -10px;
-	border-left: 3px solid #aaa;
-	border-right: 3px solid #aaa;
-	border-radius: 3px;
+.nav-links .active-about:link,
+.nav-links .active-about:visited {
+	color: #556DA0;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .music-link:hover,
+.nav-links .music-link:active {
+	color: #DB6E5E;
+	border-bottom: 3px solid #DB6E5E;
+	
+}
+
+.nav-links .active-music:link,
+.nav-links .active-music:visited {
+	color: #DB6E5E;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .events-link:hover,
+.nav-links .events-link:active {
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	
+}
+
+.nav-links .active-events:link,
+.nav-links .active-events:visited {
+	color: #556DA0;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .contacts-link:hover,
+.nav-links .contacts-link:active {
+	color: #86BC8A;
+	border-bottom: 3px solid #86BC8A;
+	
+}
+
+.nav-links .active-contacts:link,
+.nav-links .active-contacts:visited {
+	color: #86BC8A;
+	border-bottom: 3px solid transparent;
 }
 
 /***********************/
@@ -162,13 +197,27 @@ nav {
 /***********************/
 
 #main-page {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1000x1000/?calm');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/BarBand.jpeg');
 	background-size: cover;
 	height: 100vh;
+    border: 2px solid #000;
 }
 
+.stay-up-overlay {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    padding: 10px;
+}
 
+.stay-up-overlay h1 {
+    font-size: 800%;
+}
 
+.stay-up-link:link,
+.stay-up-link:visited, {
+    text-decoration: none;
+}
 
 /***********************/
 /*--------ABOUT--------*/
@@ -187,13 +236,12 @@ nav {
 
 
 
-
 /********************/
 /*------FOOTER------*/
 /********************/
 
 footer {
-    background-color: #222;
+    background-color: #000;
 	height: 10vh;
 	padding-top: 1em
 }
