@@ -74,6 +74,23 @@ a:visited {
     width: 200px
 }
 
+.table {
+    display: table;
+	width: 80%;
+	margin: auto;
+}
+
+.tableRow {
+    display: table-row;
+	margin: 20px 0;
+	width: 100%;
+}
+
+.col {
+    display: table-cell;
+}
+
+
 /********************/
 /*-----NAVIGATION-----*/
 /********************/
@@ -197,7 +214,7 @@ nav {
 /***********************/
 
 #main-page {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/BarBand.jpeg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/BarBand.jpeg');
 	background-size: cover;
 	height: 100vh;
     border: 2px solid #000;
@@ -231,6 +248,86 @@ nav {
 	background-color: #DFB992;
 }
 
+#about {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/JonesBeachBand.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.band-display-group {
+	width: 20%;
+	text-align: center;
+	margin: 0 40px;
+}
+
+.bandmate-description {
+	font-size: 85%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.col-container {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.about-col-container {
+	background: rgba(223, 185, 146, 0.8);
+}
+
+.bandmate-img {
+	width: 70%;
+	min-width: 100px;
+	margin-top: 25px;
+}
+
+#our-story {
+	margin: 100px 100px 20px 100px;
+	padding: 10px 50px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#our-story h2 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 200%;
+	text-decoration: underline;
+}
+
+
+/********************/
+/*------MUSIC-------*/
+/********************/
+
+.music-text {
+	color: #DB6E5E;
+}
+
+
+
+
+
+/********************/
+/*------EVENTS------*/
+/********************/
+
+.events-text {
+	color: #fff;
+}
+
+
+
+
+/**********************/
+/*------CONTACTS------*/
+/**********************/
+
+.contacts-text {
+	color: #86BC8A;
+}
+
+
 
 
 
@@ -243,7 +340,7 @@ nav {
 footer {
     background-color: #000;
 	height: 10vh;
-	padding-top: 1em
+	padding-top: 1em;
 }
 
 footer .container {
