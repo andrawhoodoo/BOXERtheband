@@ -24,12 +24,17 @@ body {
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-size: 20px;
     color: #fff;
+	line-height: 1.5em;
 }
 
 
 /**************************/
 /*-----REUSABLE ITEMS-----*/
 /**************************/
+
+strong {
+	font-weight: 600;
+}
 
 .container {
 	margin: 0 50px;
@@ -62,6 +67,7 @@ a:visited {
 	font-style: italic;
 	font-size: 320%;
 	font-weight: 200;
+	line-height: normal;
 }
 
 .header-img-splash {
@@ -90,7 +96,9 @@ a:visited {
     display: table-cell;
 }
 
-
+.empty-div {
+	padding-top: 50px;
+}
 /********************/
 /*-----NAVIGATION-----*/
 /********************/
@@ -253,7 +261,8 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-	height: 100vh;
+	border: 1px solid #000;
+
 }
 
 .band-display-group {
@@ -271,11 +280,24 @@ nav {
 .col-container {
 	background: rgba(0, 0, 0, 0.8);
 }
-
+.lenny-text {
+	color: #372B3A;
+}
 .about-col-container {
-	background: rgba(223, 185, 146, 0.8);
+	background: rgba(134, 188, 138, 0.8);
 }
 
+.contacts-col-container {
+	background: rgba(55, 43, 58, 0.8);		
+}
+
+.music-col-container {
+	background: rgba(85, 109, 160, 0.8);
+}
+
+.events-col-container {
+	background: rgba(219, 110, 94, 0.8);
+}
 .bandmate-img {
 	width: 70%;
 	min-width: 100px;
@@ -283,8 +305,8 @@ nav {
 }
 
 #our-story {
-	margin: 100px 100px 20px 100px;
-	padding: 10px 50px;
+	margin: 100px;
+	padding: 30px 50px;
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -295,6 +317,49 @@ nav {
 	text-decoration: underline;
 }
 
+.quote-group {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	
+	position: relative;
+}
+
+.quote-group cite {
+	margin-left: 50%;
+	
+}
+
+.quote-text {
+	border-left: 3px solid #fff;
+	display: inline-block;
+	margin-left: 20%;
+	padding-left: 20px;
+	width: 80%;
+	background: #111;
+}
+
+.quote-icon-5x {
+	display: inline;
+	width: 20%;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.quote-icon-3x {
+	display: inline;
+	width: 20%;
+	position: absolute;
+	top: 20px;
+	left: 60px;
+}
+
+.ep {
+	padding-bottom: 20px;
+	margin-bottom: 80px;
+}
 
 /********************/
 /*------MUSIC-------*/
@@ -304,10 +369,19 @@ nav {
 	color: #DB6E5E;
 }
 
+.music-header {
+	background: #556DA0;
+}
 
+#music {
+	background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/Duo.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
 
-
-
+.
 /********************/
 /*------EVENTS------*/
 /********************/
@@ -316,7 +390,9 @@ nav {
 	color: #fff;
 }
 
-
+.events-bg {
+	background: #DB6E5E;
+}
 
 
 /**********************/
@@ -327,7 +403,9 @@ nav {
 	color: #86BC8A;
 }
 
-
+.contacts-bg {
+	background: #372B3A;
+}
 
 
 

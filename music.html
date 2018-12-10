@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
+		
+		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -36,10 +38,12 @@
 			<!--Music page header-->
 			<div class="header music-header">
 				<div class="container">
-					<h1 class="header-title">OUR &nbsp; MUSIC</h1>
+					<h1 class="header-title music-text">OUR &nbsp; MUSIC</h1>
 				</div>
 				<img class="header-img-splash" src="resources/img/BoxerLogoCrop.png" alt="Boxer Logo">
 			</div>
+			<div id="video-container"></div>
+			
 			
 		</section>
 		
@@ -73,5 +77,30 @@
 			</div>
 		</footer>
 
+		<!-- Load React API -->
+		<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<!-- Load React DOM-->
+		<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<!-- Load Babel Compiler -->
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+		<script type = "text/babel">
+			let songVideo = React.createElement({
+				render: function() {
+					return <iframe width="560" height="315" src={this.props.embedUrl} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;	
+				}
+			});
+
+			let musicVideo = React.createElement({
+				render: function() {
+					return (
+							<songVideo embedUrl="https://www.youtube.com/embed/d6Izzgo3Vp8"></songVideo>
+					);
+				}
+			});
+
+			let mountNode = document.getElementById('video-container');
+			ReactDOM.render(<musicVideo />, mountNode);
+		</script>
+    
 	</body>
 </html>
