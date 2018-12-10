@@ -1,0 +1,608 @@
+/****BOXER COLOR THEME****/
+/*#DFB992*****Beige*******/
+/*#222********Dark Grey***/
+/*#86BC8A*****Green*******/
+/*#DB6E5E*****Salmon******/
+/*#372B3A*****Deep Purple*/
+/*#86A6B4*****V Lightblue*/
+/*#556DA0*****Periwinkle**/
+/*************************/
+
+
+/********************/
+/*-----SETUP--------*/
+/********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+    color: #fff;
+	line-height: 1.5em;
+}
+
+
+/**************************/
+/*-----REUSABLE ITEMS-----*/
+/**************************/
+.text-white {
+    color: #fff;
+}
+
+
+strong {
+	font-weight: 600;
+}
+
+.container {
+	margin: 0 50px;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #aaa;
+}
+
+.clear {
+	clear: both;
+}
+
+.active {
+	cursor: default;
+}
+
+.nav-avoid {
+	padding-top: 45px;
+}
+
+.header {
+	height: 66px;
+}
+
+.header-title {
+	margin-left: 80px;
+	font-style: italic;
+	font-size: 320%;
+	font-weight: 200;
+	line-height: normal;
+}
+
+.header-img-splash {
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow-y: hidden;
+	margin-right: 130px;
+	margin-top: 10px;
+    width: 200px
+}
+
+.table {
+    display: table;
+	width: 80%;
+	margin: auto;
+}
+
+.tableRow {
+    display: table-row;
+	margin: 20px 0;
+	width: 100%;
+}
+
+.col {
+    display: table-cell;
+}
+
+.empty-div {
+	padding-top: 100px;
+}
+/********************/
+/*-----NAVIGATION-----*/
+/********************/
+
+nav {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 4px 4px #000;
+    background-color: #000;
+	height: 45px;
+	z-index: 9999;
+}
+
+
+#logo-name {
+    display: inline-block;
+    margin-left: 10px;
+	margin-top: 5px;
+	font-size: 150%;
+	font-weight: 500;
+	
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+	height: 70px;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+
+
+/***Link looks and effects****/
+
+.logo-link:link,
+.logo-link:visited {
+	color: #DFB992;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    margin-top: .5em;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 90%;
+	font-weight: 500;
+    transition: border-bottom 0.1s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+    transition: border-bottom 0.1s;
+}
+
+.nav-links .about-link:hover,
+.nav-links .about-link:active {
+	color: #556DA0;
+	border-bottom: 3px solid #556DA0;
+	
+}
+
+.nav-links .active-about:link,
+.nav-links .active-about:visited {
+	color: #556DA0;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .music-link:hover,
+.nav-links .music-link:active {
+	color: #DB6E5E;
+	border-bottom: 3px solid #DB6E5E;
+	
+}
+
+.nav-links .active-music:link,
+.nav-links .active-music:visited {
+	color: #DB6E5E;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .events-link:hover,
+.nav-links .events-link:active {
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	
+}
+
+.nav-links .active-events:link,
+.nav-links .active-events:visited {
+	color: #fff;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-links .contacts-link:hover,
+.nav-links .contacts-link:active {
+	color: #86BC8A;
+	border-bottom: 3px solid #86BC8A;
+	
+}
+
+.nav-links .active-contacts:link,
+.nav-links .active-contacts:visited {
+	color: #86BC8A;
+	border-bottom: 3px solid transparent;
+}
+
+/***********************/
+/*------MAIN PAGE------*/
+/***********************/
+
+#main-page {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/BarBand.jpeg');
+	background-size: cover;
+	height: 100vh;
+    border: 1px solid #000;
+}
+
+.stay-up-overlay {
+    text-align: center;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+.stay-up-overlay h1 {
+    font-size: 800%;
+}
+
+.stay-up-link:link,
+.stay-up-link:visited, {
+    text-decoration: none;
+}
+
+/***********************/
+/*--------ABOUT--------*/
+/***********************/
+
+.about-text {
+    color: #556DA0;
+}
+
+.about-header {
+	background-color: #DFB992;
+}
+
+#about {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/JonesBeachBand.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+
+
+}
+
+.band-title {
+    font-size: 85%;
+}
+
+.band-display-group {
+	width: 20%;
+	text-align: center;
+	margin: 0 40px;
+}
+
+.bandmate-description {
+	font-size: 70%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.col-container {
+	background: rgba(0, 0, 0, 0.8);
+}
+.lenny-text {
+	color: #372B3A;
+}
+.about-col-container {
+	background: rgba(134, 188, 138, 0.8);
+}
+
+.contacts-col-container {
+	background: rgba(55, 43, 58, 0.8);		
+}
+
+.music-col-container {
+	background: rgba(85, 109, 160, 0.8);
+}
+
+.events-col-container {
+	background: rgba(219, 110, 94, 0.8);
+}
+.bandmate-img {
+	width: 70%;
+	min-width: 100px;
+	margin-top: 25px;
+}
+
+#our-story {
+	margin: 100px;
+	padding: 30px 50px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#our-story h2 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 200%;
+	text-decoration: underline;
+}
+
+.quote-group {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	position: relative;
+}
+
+.quote-group cite {
+	margin-left: 50%;
+	
+}
+
+.quote-text {
+	border-left: 3px solid #fff;
+	display: inline-block;
+	margin-left: 20%;
+	padding-left: 20px;
+	width: 80%;
+	background: #000;
+}
+
+.quote-icon-5x {
+	display: inline;
+	width: 20%;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.quote-icon-3x {
+	display: inline;
+	width: 20%;
+	position: absolute;
+	top: 20px;
+	left: 60px;
+}
+
+.ep {
+	padding-bottom: 20px;
+	margin-bottom: 80px;
+}
+
+/********************/
+/*------MUSIC-------*/
+/********************/
+
+.music-text {
+	color: #DB6E5E;
+}
+
+.music-header {
+	background: #556DA0;
+}
+
+#music {
+	background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/Duo.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
+
+.pah {
+    color: #DB6E5E; 
+}
+
+#music-icon {
+    color: #DB6E5E !important;
+}
+
+/********************/
+/*------EVENTS------*/
+/********************/
+
+.events-text {
+	color: #fff;
+}
+
+.events-bg {
+	background: #DB6E5E;
+}
+
+#events {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/GrayLennyCrop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
+
+.events-container {
+    text-align: center;
+}
+
+.events-list {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.events-list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+
+.icon-container {
+    
+}
+
+/**********************/
+/*------CONTACTS------*/
+/**********************/
+
+.contacts-text {
+	color: #86BC8A;
+}
+
+.contacts-bg {
+	background: #372B3A;
+}
+
+.contact-form-header {
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+    font-size: 150%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.header-icon {
+    padding-left: 15px;
+}
+
+#contacts {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/TailgateCrop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
+
+#contact-form {
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contact-form-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input-group .input-holder {
+    border-left: 3px solid #fff;
+	display: inline-block;
+	padding: 5px 10% 10px 10%;
+	width: 90%;
+	
+}
+.input-group label {
+	width: 20%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.input-holder input {
+    width: 100%;
+}
+
+.message-group {
+    position: relative;
+}
+
+.message-group label {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 130px;
+    border-right: 3px solid #fff;
+}
+
+.wysiwyg {
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 170px;
+    width: 450px;
+    height: 300px;
+}
+
+.submit-button {
+    margin: 20px 0 20px 520px;
+    width: 100px;
+    font-size: 125%;
+    border-radius: 5px;
+}
+
+.shout-out {
+    font-size: 200%;
+    font-weight: 300;
+    margin-top: 500px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.shout-out-img {
+    width: 110px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/********************/
+/*------FOOTER------*/
+/********************/
+
+footer {
+    background-color: #000;
+	padding-top: 1em;
+}
+
+footer .container {
+	text-align: center;
+}
+
+
+.social-links {
+    list-style: none;
+
+}
+.social-bar {
+    padding-bottom: 1em;
+}
+.social-links li {
+    display: inline;
+	padding: 0 2%;
+}
+
+/***** Link Hover Effects ****/
+
+
+.fb:hover,
+.fb:active {
+	color: #3b5998;
+}
+
+.sp:hover,
+.sp:active {
+	color: #1DB954;
+}
+
+.sc:hover,
+.sc:active {
+	color: #f70;
+}
+
+.yt:hover,
+.yt:active {
+	color: #f00;
+}
+
+.ap:hover,
+.ap:active {
+	color: #fff;
+}
+
+.in:hover,
+.in:active {
+	color: #8a3ab9;
+}
+
+
+
+
