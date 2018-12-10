@@ -31,6 +31,10 @@ body {
 /**************************/
 /*-----REUSABLE ITEMS-----*/
 /**************************/
+.text-white {
+    color: #fff;
+}
+
 
 strong {
 	font-weight: 600;
@@ -59,7 +63,7 @@ a:visited {
 }
 
 .header {
-	height: 67px;
+	height: 66px;
 }
 
 .header-title {
@@ -97,7 +101,7 @@ a:visited {
 }
 
 .empty-div {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 /********************/
 /*-----NAVIGATION-----*/
@@ -200,7 +204,7 @@ nav {
 
 .nav-links .active-events:link,
 .nav-links .active-events:visited {
-	color: #556DA0;
+	color: #fff;
 	border-bottom: 3px solid transparent;
 }
 
@@ -225,14 +229,13 @@ nav {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/BarBand.jpeg');
 	background-size: cover;
 	height: 100vh;
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 
 .stay-up-overlay {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15em;
 }
 
 .stay-up-overlay h1 {
@@ -263,6 +266,11 @@ nav {
     background-repeat: no-repeat;
 	border: 1px solid #000;
 
+
+}
+
+.band-title {
+    font-size: 85%;
 }
 
 .band-display-group {
@@ -272,7 +280,7 @@ nav {
 }
 
 .bandmate-description {
-	font-size: 85%;
+	font-size: 70%;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -322,7 +330,6 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 800px;
-	
 	position: relative;
 }
 
@@ -337,7 +344,7 @@ nav {
 	margin-left: 20%;
 	padding-left: 20px;
 	width: 80%;
-	background: #111;
+	background: #000;
 }
 
 .quote-icon-5x {
@@ -381,7 +388,14 @@ nav {
 	border: 1px solid #000;
 }
 
-.
+.pah {
+    color: #DB6E5E; 
+}
+
+#music-icon {
+    color: #DB6E5E !important;
+}
+
 /********************/
 /*------EVENTS------*/
 /********************/
@@ -394,6 +408,33 @@ nav {
 	background: #DB6E5E;
 }
 
+#events {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/GrayLennyCrop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
+
+.events-container {
+    text-align: center;
+}
+
+.events-list {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.events-list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+
+.icon-container {
+    
+}
 
 /**********************/
 /*------CONTACTS------*/
@@ -407,9 +448,101 @@ nav {
 	background: #372B3A;
 }
 
+.contact-form-header {
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+    font-size: 150%;
+    width: 70%;
+    margin-left: 15%;
+}
 
+.header-icon {
+    padding-left: 15px;
+}
 
+#contacts {
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/TailgateCrop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	border: 1px solid #000;
+}
 
+#contact-form {
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contact-form-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input-group .input-holder {
+    border-left: 3px solid #fff;
+	display: inline-block;
+	padding: 5px 10% 10px 10%;
+	width: 90%;
+	
+}
+.input-group label {
+	width: 20%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.input-holder input {
+    width: 100%;
+}
+
+.message-group {
+    position: relative;
+}
+
+.message-group label {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 130px;
+    border-right: 3px solid #fff;
+}
+
+.wysiwyg {
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 170px;
+    width: 450px;
+    height: 300px;
+}
+
+.submit-button {
+    margin: 20px 0 20px 520px;
+    width: 100px;
+    font-size: 125%;
+    border-radius: 5px;
+}
+
+.shout-out {
+    font-size: 200%;
+    font-weight: 300;
+    margin-top: 500px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.shout-out-img {
+    width: 110px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
 
 /********************/
 /*------FOOTER------*/
@@ -417,7 +550,6 @@ nav {
 
 footer {
     background-color: #000;
-	height: 10vh;
 	padding-top: 1em;
 }
 
@@ -428,8 +560,11 @@ footer .container {
 
 .social-links {
     list-style: none;
-}
 
+}
+.social-bar {
+    padding-bottom: 1em;
+}
 .social-links li {
     display: inline;
 	padding: 0 2%;
