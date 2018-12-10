@@ -35,6 +35,10 @@ body {
     color: #fff;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 
 strong {
 	font-weight: 600;
@@ -349,10 +353,10 @@ nav {
 
 .quote-icon-5x {
 	display: inline;
-	width: 20%;
+    padding: 25px;
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	left: 10px;
+
 }
 
 .quote-icon-3x {
@@ -381,7 +385,7 @@ nav {
 }
 
 #music {
-	background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/Duo.jpeg');
+	background-image: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)), url('img/Duo.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -392,9 +396,74 @@ nav {
     color: #DB6E5E; 
 }
 
-#music-icon {
-    color: #DB6E5E !important;
+.music-icon-3x {
+	display: inline;
+	padding: 25px 30px;
+	position: absolute;
+	left: 60px;
+    color: #DB6E5E;
+    background: #556DA0;
 }
+
+    
+
+.video-group {
+    align-content: center;
+    margin-top: 100px;
+}
+
+.video-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-text {
+    margin-left:auto;
+    margin-right: auto;
+    width: 610px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    position: relative;
+}
+
+.video-text .big {
+    font-size: 300%;
+}
+
+.video-text cite {
+    display: inline-block;
+    margin-left: 80%;
+}
+
+.video-text i {
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+#video-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 2% 1%;
+    width: 55%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+
+.announcement-group {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	position: relative;
+}
+
 
 /********************/
 /*------EVENTS------*/
@@ -432,9 +501,7 @@ nav {
 }
 
 
-.icon-container {
-    
-}
+
 
 /**********************/
 /*------CONTACTS------*/
