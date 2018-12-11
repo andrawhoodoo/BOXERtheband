@@ -239,10 +239,10 @@ nav {
 .stay-up-overlay {
     text-align: center;
     justify-content: center;
-    margin-top: 15em;
+    margin-top: 25%;
 }
 
-.stay-up-overlay h1 {
+.stay-up-header {
     font-size: 800%;
 }
 
@@ -449,8 +449,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    padding: 2% 1%;
-    width: 55%;
+	width: 620px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
 }
@@ -489,18 +489,54 @@ nav {
     text-align: center;
 }
 
-.events-list {
-    margin-top: 30px;
-    list-style: none;
+#events-list {
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 100px;
+	width: 810px;
+    
+}
+#events-list ul{
+	list-style: none;
 }
 
-.events-list-item {
+
+#events-list ul li {
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#events-list ul li div {
+	position: relative;
+}
+
+#events-list ul li div img {
+	height: 92%;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	overflow-y: hidden;
+	display: inline;
 }
 
 
+#events-list li div span {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	text-decoration: underline;
+	color: #DB6E5E;
+}
+
+#events-list li div div h2 {
+	font-size: 150%;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+ 	color: #556DA0;
+}
 
 
 /**********************/
@@ -522,8 +558,9 @@ nav {
     background: rgba(0, 0, 0, 0.7);
     text-decoration: underline;
     font-size: 150%;
-    width: 70%;
-    margin-left: 15%;
+    width: 45%;
+    margin-left: auto;
+	margin-right: auto;
 }
 
 .header-icon {

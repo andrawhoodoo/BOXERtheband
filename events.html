@@ -41,28 +41,7 @@
 			
 			
 		    <div class="container events-container">	
-				<ul class="events-list">
-				    <li class="events-list-item">
-				        <div class="events-group container">
-				            <span class="icon-container events-bg"><i class="fas fa-edit fa-2x"></i></span>
-				        </div>
-				    </li>
-				    <li class="events-list-item">
-				        <div class="events-group container">
-				            <span class="icon-container events-bg"><i class="fas fa-edit fa-2x"></i></span>
-				        </div>
-				    </li>
-				    <li class="events-list-item">
-				        <div class="events-group container">
-				            <span class="icon-container events-bg"><i class="fas fa-edit fa-2x"></i></span>
-				        </div>
-				    </li>
-				    <li class="events-list-item">
-				        <div class="events-group container">
-				            <span class="icon-container events-bg"><i class="fas fa-edit fa-2x"></i></span>
-				        </div>
-				    </li>
-				</ul>
+				<div id="events-list"></div>
 			</div>
 		    
 		</section>
@@ -97,8 +76,53 @@
 			</div>
 		</footer>
 
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+        <script type="text/babel">
+			var EventItem = React.createClass({
+					render: function() {
+						return (
+							<div>
+								<img src={this.props.imgUrl} alt="event image"/>
+								<span>{this.props.eventDate}</span>
+								<div>
+									<h2>{this.props.eventName}</h2>
+									<h3>{this.props.eventLocationName}</h3>
+									<h4>{this.props.eventLocation}</h4>
+									<p>
+										{this.props.children}
+									</p>
+								</div>
+							</div>
+						)
+					}
+				});
+				var EventList = React.createClass({
+					render: function() {
+						return (
+							<div>
+								<ul>
+									<li>
+										<EventItem eventName="Space Debris Presents: The Rail" eventDate="December 14th" imgUrl="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/48369959_2453346588226054_9067859418619576320_n.jpg?_nc_cat=100&_nc_ht=scontent-ort2-2.xx&oh=9880511a3a3fa920dfc3b4cd2f4e7db5&oe=5C665A9E" eventLocationName="The Rail" eventLocation="281 W Main St, Smithtown, NY 11787">Friday at 8pm - 11:59pm</EventItem>
+									</li>
+									<li>
+										<EventItem eventName="Round 2 @ One Eye Jack's" eventDate="October 12th" imgUrl="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/42816395_347157399179111_8759409448834826240_n.jpg?_nc_cat=100&_nc_ht=scontent-ort2-2.xx&oh=30e8648d789bf5acb1452852b46eb4fd&oe=5C63D60D" eventLocationName= "One Eye Jack's" eventLocation="380 N. Wantagh Avenue, Bethpage, NY 11714">Friday at 9pm</EventItem>
+									</li>
+									<li>
+										<EventItem eventName="BOXER, Ernie & The Band, Geotribe at One Eye Jack's" eventDate="September 14th" imgUrl="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/40752521_338436843384500_851577730012020736_n.jpg?_nc_cat=109&_nc_ht=scontent-ort2-2.xx&oh=72efbed1b580182bbaa0ced2cdce5537&oe=5C66523C" eventLocationName= "One Eye Jack's" eventLocation="380 N. Wantagh Avenue, Bethpage, NY 11714">Friday at 9pm</EventItem>
+									</li>
+								</ul>
+							</div>
+						);
+					}
+				});
+
+
+
+				var mountNode = document.getElementById('events-list');
+				  ReactDOM.render(<EventList />, mountNode);
+		</script>
+        			
 	</body>
 </html>
