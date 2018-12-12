@@ -46,12 +46,6 @@
 	}
 }
 
-
-
-
-
-
-
 @media(max-width: 1000px) {
 	
 	/***********************/
@@ -174,6 +168,168 @@
 	
 	#contacts {
 		background-position: -300px;
-	}
-		
+	}		
 }
+
+@media(max-width: 900px) {
+	
+	
+	.header-img-splash { margin-right: 0; }
+	
+	.header-title { margin-left: -40px; }
+	
+	/*****about********/
+	.blurb { font-size: 90%;}
+	
+	#our-story {
+		padding: 30px 20px;
+	}
+
+	
+	.quote-group { margin-left: -15px; }
+	
+	.quote-text {
+		width: 70%;
+		font-size: 85%;
+		line-height: 1.5em;
+	}
+	
+	.normal-display-i { display: none; }
+	
+	.small-display-i {
+		display: inline;
+		padding: 25px;
+		position: absolute;
+		left: 40px;
+		top: 10px;
+	}
+	
+	/*****music********/
+	.announcement-group {
+		margin-left: 70px;
+		width: 700px;
+
+	}
+	
+	.music-icon-3x {
+		padding: 30px 30px;
+		left: 39px;
+	}
+	
+	.ep {
+		padding-right: 20px;
+	}
+	
+	/*****events*******/
+	#events-list { width: 700px; }
+	
+	#events-list li div div h2 {
+		font-size: 130%;
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	#events-list ul li div img { height: 85%; }
+	
+	#events-list li div div h4 { 
+		font-size: 80%;
+		font-weight: 500;
+	}
+	
+	/*****contacts*******/
+	.contact-form-header { font-size: 100%; }
+	
+	#contact-form { width: 600px; }
+	
+	.input-group label {
+		padding-right: 10px;
+		font-size: 80%;
+		font-weight: bold;
+	}
+	
+	.wysiwyg {
+		margin-left: 120px;
+		width: 350px;
+		height: 250px;
+	}
+
+	.submit-button { margin-left: 370px; }
+
+	.message-group label {
+		top: 20px;
+		left: 10px;
+		width: 100px;
+	}
+}
+
+
+@media(max-width: 800px) {	
+	
+	.bandmate-description {
+		font-size: 60%;
+		font-weight: bold;
+	}
+	
+	.quote-group {
+		margin-left: 30px;
+		width: 600px;
+	}
+	
+	.quote-text {
+		width: 80%;
+		padding-right: 10px;
+	}
+	
+	.small-display-i {
+		left: 10px;
+		top: 10px;
+	}
+	
+	.quote-group cite { margin-left: 45%; }
+
+	.music-icon-3x {
+		padding: 18px 20px;
+		left: 53px;
+	}
+	
+	.announcement-group {
+		margin-left: 27px;
+		width: 670px;
+	}
+	
+	#music {
+		background-size: 187%;
+		background-position: -325px;
+	}
+	
+	#events { background-position: -400px}
+	
+	#events-list li div span { 
+		margin-left: 40%;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	
+	#events-list { width: 550px; }
+	
+	#events-list li { padding-right: 15px; }
+	
+	#events-list li div div h3,
+	#events-list li div div h4,
+	#events-list li div div p { margin-left: 40%; }
+	
+	#events-list li div div h2 { margin-left: 45%;}
+	
+	#contacts { 
+		background-size: 207%;
+		background-position: -400px
+	}
+	
+	.shout-out {
+		font-size: 150%;
+		margin-top: 330px;
+		margin-bottom: 470px;
+	}
+	
+}
+

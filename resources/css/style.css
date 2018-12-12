@@ -107,6 +107,15 @@ a:visited {
 .empty-div {
 	padding-top: 100px;
 }
+
+.mobile-correct {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.home-correct {
+	background: #000;
+}
+
 /********************/
 /*-----NAVIGATION-----*/
 /********************/
@@ -274,9 +283,7 @@ nav {
     background-repeat: no-repeat;
 	border: 1px solid #000;
 }
-.mobile-correct {
-		background: rgba(0, 0, 0, 0.7);
-}
+
 .band-title {
     font-size: 85%;
 }
@@ -293,9 +300,6 @@ nav {
 	font-weight: bold;
 }
 
-.col-container {
-	background: rgba(0, 0, 0, 0.8);
-}
 .lenny-text {
 	color: #372B3A;
 }
@@ -360,7 +364,6 @@ nav {
     padding: 25px;
 	position: absolute;
 	left: 10px;
-
 }
 
 .quote-icon-3x {
@@ -371,9 +374,8 @@ nav {
 	left: 60px;
 }
 
-.ep {
-	padding-bottom: 20px;
-	margin-bottom: 80px;
+.small-display-i {
+	display: none;
 }
 
 /********************/
@@ -472,6 +474,10 @@ nav {
 	position: relative;
 }
 
+.ep {
+	padding-bottom: 20px;
+	margin-bottom: 80px;
+}
 
 /********************/
 /*------EVENTS------*/
@@ -506,6 +512,7 @@ nav {
 }
 #events-list ul{
 	list-style: none;
+	padding-bottom: 1px;
 }
 
 
@@ -714,7 +721,4 @@ footer .container {
 .in:active {
 	color: #8a3ab9;
 }
-
-
-
 
