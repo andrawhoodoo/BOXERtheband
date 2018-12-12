@@ -20,30 +20,6 @@
 	.bandmate-description {
 		font-size: 80%;
 	}
-	
-	/***********************/
-	/*****MUSIC PAGE********/
-	/***********************/
-	
-	#music {
-		background-position: -125px;
-	}
-	
-	/***********************/
-	/*****EVENTS PAGE*******/
-	/***********************/
-	
-	#events {
-		background-position: -125px;
-	}
-	
-	/***********************/
-	/*****CONTACTS PAGE*****/
-	/***********************/
-	
-	#contacts {
-		background-position: -125px;
-	}
 }
 
 @media(max-width: 1000px) {
@@ -130,45 +106,12 @@
 		margin-left: -200px;
 	}
 	
-	.stay-up-overlay {
-		margin-top: 30%;
-		margin-left: 20%;
-	}
+	
 	
 	.stay-up-header {
-		font-size: 500%;
-	}
-	
-	/***********************/
-	/*****ABOUT PAGE********/
-	/***********************/
-	#about {
-		background-position: -300px;
-	}
-
-	/***********************/
-	/*****MUSIC PAGE********/
-	/***********************/
-
-	#music {
-		background-position: -250px;
-	}
-	
-	/***********************/
-	/*****EVENTS PAGE*******/
-	/***********************/
-	
-	#events {
-		background-position: -250px;
-	}
-	
-	/***********************/
-	/*****CONTACTS PAGE*****/
-	/***********************/
-	
-	#contacts {
-		background-position: -300px;
-	}		
+		font-size: 600%;
+		margin-left: 20%;
+	}	
 }
 
 @media(max-width: 900px) {
@@ -186,7 +129,7 @@
 	}
 
 	
-	.quote-group { margin-left: -15px; }
+	.quote-group { margin-left: -40px !important; }
 	
 	.quote-text {
 		width: 70%;
@@ -265,19 +208,38 @@
 
 @media(max-width: 800px) {	
 	
+	#main-page {
+		margin-left: -225px;
+	}
+	
+	.blurb {
+		font-size: 85% !important;
+	}
+	
+	.stay-up-header {
+		font-size: 500%;
+		margin-left: 25%;
+	}
+	
+	
 	.bandmate-description {
-		font-size: 60%;
+		font-size: 55%;
 		font-weight: bold;
 	}
 	
 	.quote-group {
-		margin-left: 30px;
-		width: 600px;
+		margin-left: -80px !important;
+		width: 500px;
+	}
+	
+	.quote-icon-5x {
+		display: none;
 	}
 	
 	.quote-text {
 		width: 80%;
 		padding-right: 10px;
+		font-size: 80%;
 	}
 	
 	.small-display-i {
@@ -297,12 +259,6 @@
 		width: 670px;
 	}
 	
-	#music {
-		background-size: 187%;
-		background-position: -325px;
-	}
-	
-	#events { background-position: -400px}
 	
 	#events-list li div span { 
 		margin-left: 40%;
@@ -330,6 +286,67 @@
 		margin-top: 330px;
 		margin-bottom: 470px;
 	}
-	
 }
+
+
+
+@media(max-width: 550px) {
+	.footer-normal-i { display: none; }
+	.footer-small-i { 
+		display: inline;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+}
+
+
+@media(max-width: 480px) {
+	#logo-name {margin-left: -50px; }
+	.logo img { 
+		margin-right: 0px;
+		height: 55px;
+	}
+	.header { height: 40px; }
+	.header-img-splash { display: none; }
+	.header-title { 
+		font-size: 150%;
+		padding-top: 5px;
+	}
+	.mobile-nav-icon { margin: 3px -40px 0 0;}
+	#main-page { background-position: -25px; }
+	.stay-up-header{ 
+		font-size: 300%;
+		margin-left: 30%;
+		margin-top: 40%;
+	}
+	
+	.footer-small-i { 
+		padding-left: .25em;
+		padding-right: .25em;
+	}
+	.nav-links { margin-left: -50px;}
+	.col {
+		display: block;
+		margin: 20px auto;
+		width: 200px;
+	}
+	
+	#our-story { 
+		margin: 75px 0;
+		font-size: 70%;
+	}
+	
+	.quote-group { 
+		width: 350px;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.quote-group cite { margin-left: 0px;}
+}
+
+
+
+
 
