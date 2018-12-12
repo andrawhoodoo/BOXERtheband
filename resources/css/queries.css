@@ -277,8 +277,7 @@
 	#events-list li div div h2 { margin-left: 45%;}
 	
 	#contacts { 
-		background-size: 207%;
-		background-position: -400px
+		background-position: -360px;
 	}
 	
 	.shout-out {
@@ -339,11 +338,74 @@
 	.quote-group { 
 		width: 350px;
 		margin-top: 40px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: -30px !important;
 	}
 	
 	.quote-group cite { margin-left: 0px;}
+    .video-text { 
+        width: 360px;
+        padding: 15px; 
+        font-size: 18px;
+    }
+    .video-text .big { font-size: 250%; }
+    .video-text cite { margin-left: 70%; }
+    #video-container { 
+        width: 400px;
+        padding: 0px;
+        margin-left: -20px;
+    }
+    iframe {width: 360px; }
+    .quote-text {
+        margin-left: 15%;
+        width: 300px;
+    }
+    .music-icon-3x {
+        background: none;
+        left: 2%;
+        top: 10%;
+    }
+    #events-list { 
+        width: 360px;
+        margin-top: 50px;
+    }
+    #events-list ul li { margin-bottom: 50px;}
+    #events-list li div div h3,
+    #events-list li div div h4,
+    #events-list li div div p { margin-left: 15px;}
+    #events-list ul li div img { display: none; }
+    #events-list li div span { 
+        margin-left: 120px;
+        margin-right: 80px;
+        width: 200px;
+    }
+    #events-list li div div h2 { 
+        margin-left: 80px;
+        width: 200px;
+    }
+    .contact-form-header { width: 80%; }
+    #contact-form { width: 360px; }
+    .input-group label,
+    .input-group .message-group { width: 100%; }
+    .input-group {text-align: center;}
+    .input-group .input-holder {
+        border-left: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .message-group label {
+        border: none;
+        width: 288px;
+        margin-left: -20px;
+    }
+    .wysiwyg { 
+        margin-top: 80px;
+        margin-left: -45px;
+    }
+    .submit-button { margin-left: 75%; }
+    .shout-out { 
+        margin-bottom: 265px;
+        font-size: 100%;
+    }
 }
 
 

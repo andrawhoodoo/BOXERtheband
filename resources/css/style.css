@@ -462,6 +462,11 @@ nav {
     left: 3px;
 }
 
+.no-absolute { 
+    position: relative !important;
+    margin-left: 2%;
+}
+
 #video-container {
     text-align: center;
     margin-left: auto;
