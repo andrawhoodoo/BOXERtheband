@@ -1,0 +1,179 @@
+@media(max-width: 1200px) {
+	
+	/***********************/
+	/*****REUSABLE ITEMS****/
+	/***********************/
+	
+	.header-title {
+		font-size: 250%;
+		font-weight: bold;
+		padding-top: 15px;
+	}
+	/***********************/
+	/*****ABOUT PAGE********/
+	/***********************/
+	
+	.band-display-group .container {
+		margin: 0 5px;
+	}
+	
+	.bandmate-description {
+		font-size: 80%;
+	}
+	
+	/***********************/
+	/*****MUSIC PAGE********/
+	/***********************/
+	
+	#music {
+		background-position: -125px;
+	}
+	
+	/***********************/
+	/*****EVENTS PAGE*******/
+	/***********************/
+	
+	#events {
+		background-position: -125px;
+	}
+	
+	/***********************/
+	/*****CONTACTS PAGE*****/
+	/***********************/
+	
+	#contacts {
+		background-position: -125px;
+	}
+}
+
+
+
+
+
+
+
+@media(max-width: 1000px) {
+	
+	/***********************/
+	/******LINKS************/
+	/***********************/
+	
+	.nav-links {
+		display: none;
+		float: none;
+		background: #000;
+		margin-top: -21px;
+		padding-left: 20px;
+	}
+	.nav-links li {
+		display: block;
+		margin-left: 60px;
+	}
+	
+	.mobile-nav-icon {
+		color: #eee;
+		display: inline;
+		float: right;
+	}
+	
+	.nav-links li a:link,
+	.nav-links li a:visited {
+		font-size: 100%;
+
+	}
+
+	.nav-links .about-link:hover,
+	.nav-links .about-link:active {
+		color: #fff;
+		border-bottom: 3px solid transparent;
+
+	}
+
+	.nav-links .active-about:link,
+	.nav-links .active-about:visited {
+		color: #fff;
+	}
+
+	.nav-links .music-link:hover,
+	.nav-links .music-link:active {
+		color: #fff;
+		border-bottom: 3px solid transparent;
+
+	}
+
+	.nav-links .active-music:link,
+	.nav-links .active-music:visited {
+		color: #fff;
+
+	}
+
+	.nav-links .events-link:hover,
+	.nav-links .events-link:active {
+		color: #fff;
+		border-bottom: 3px solid transparent;
+
+	}
+
+	.nav-links .contacts-link:hover,
+	.nav-links .contacts-link:active {
+		color: #fff;
+		border-bottom: 3px solid transparent;
+
+	}
+
+	.nav-links .active-contacts:link,
+	.nav-links .active-contacts:visited {
+		color: #fff;
+	}
+	
+	
+	/***********************/
+	/*****MAIN PAGE*********/
+	/***********************/
+	
+	#main-page {
+		background-repeat: no-repeat;
+		margin-left: -200px;
+	}
+	
+	.stay-up-overlay {
+		margin-top: 30%;
+		margin-left: 20%;
+	}
+	
+	.stay-up-header {
+		font-size: 500%;
+	}
+	
+	/***********************/
+	/*****ABOUT PAGE********/
+	/***********************/
+	#about {
+		background-position: -300px;
+	}
+
+	/***********************/
+	/*****MUSIC PAGE********/
+	/***********************/
+
+	#music {
+		background-position: -250px;
+	}
+	
+	/***********************/
+	/*****EVENTS PAGE*******/
+	/***********************/
+	
+	#events {
+		background-position: -250px;
+	}
+	
+	/***********************/
+	/*****CONTACTS PAGE*****/
+	/***********************/
+	
+	#contacts {
+		background-position: -300px;
+	}
+		
+}

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		
 		<title>BOXER</title>
 	</head>
@@ -21,6 +22,9 @@
 						BOXER
 					</a>
 				</div>
+				<a class="mobile-nav-icon js--nav-icon">
+					<i class="fas fa-bars fa-2x"></i>
+				</a>
 				<ul class="nav-links">
 					<li><a href="about.html" class="about-link">About</a></li>
 					<li><a href="music.html" class="music-link">Music</a></li>
@@ -33,52 +37,53 @@
 		
 
 		<section id="contacts" class="nav-avoid">
-
-			<div class="header contacts-bg">
-				<div class="container">
-					<h1 class="header-title contacts-text">CONTACT &nbsp; US</h1>
+			<div class="mobile-correct">
+				<div class="header contacts-bg">
+					<div class="container">
+						<h1 class="header-title contacts-text">CONTACT &nbsp; US</h1>
+					</div>
+					<img class="header-img-splash" src="resources/img/BoxerLogoCrop.png" alt="Boxer Logo">
 				</div>
-				<img class="header-img-splash" src="resources/img/BoxerLogoCrop.png" alt="Boxer Logo">
+
+
+				<div class="container">	
+					<div class="contact-form-header">
+						<h2>Feel free to send us a message!<span class="header-icon"><i class="fas fa-pencil-alt"></i></span></h2>
+					</div>
+					<div id="contact-form">
+						<div class="contact-form-body table">
+							<div class="input-group tableRow">
+								<label for="name" class="col contacts-bg contacts-text"><i class="fas fa-user"></i>&nbsp; Name:</label>
+								<div class="input-holder col">
+									<input type="text" placeholder="Enter Name Here">
+								</div>
+
+							</div>
+							<div class="input-group tableRow">
+								<label for="email" class="col contacts-bg contacts-text"><i class="fas fa-at"></i>&nbsp; Email:</label>
+								<div class="input-holder col">
+									<input type="email" placeholder="Enter Email Here">
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="input-group message-group">
+								<label for="message" class="contacts-bg contacts-text"><i class="fas fa-envelope-square"></i> Message:</label>
+								<div class="wysiwyg">
+									<textarea name="editor1"></textarea>
+								</div>
+							</div>
+							<button type="submit" class="submit-button contacts-bg contacts-text">Submit</button>    
+						</div>
+					</div>
+				</div>
+
+				<div class="container shout-out">
+				   <img src="resources/img/BoxerLogoFinal.png" alt="Boxer Logo" class="shout-out-img">
+					<h4>We love our family, &nbsp;friends, &nbsp;and fans.</h4>
+				</div>
+				<div class="empty-div"></div>
 			</div>
-			
-			
-		    <div class="container">	
-				<div class="contact-form-header">
-					<h2>Feel free to send us a message!<span class="header-icon"><i class="fas fa-pencil-alt"></i></span></h2>
-                </div>
-                <div id="contact-form">
-                    <div class="contact-form-body table">
-                        <div class="input-group tableRow">
-                            <label for="name" class="col contacts-bg contacts-text"><i class="fas fa-user"></i>&nbsp; Name:</label>
-                            <div class="input-holder col">
-                                <input type="text" placeholder="Enter Name Here">
-                            </div>
-                            
-                        </div>
-                        <div class="input-group tableRow">
-                            <label for="email" class="col contacts-bg contacts-text"><i class="fas fa-at"></i>&nbsp; Email:</label>
-                            <div class="input-holder col">
-                                <input type="email" placeholder="Enter Email Here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="input-group message-group">
-                            <label for="message" class="contacts-bg contacts-text"><i class="fas fa-envelope-square"></i> Message:</label>
-                            <div class="wysiwyg">
-                                <textarea name="editor1"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="submit-button contacts-bg contacts-text">Submit</button>    
-                    </div>
-                </div>
-			</div>
-        
-            <div class="container shout-out">
-               <img src="resources/img/BoxerLogoFinal.png" alt="Boxer Logo" class="shout-out-img">
-                <h4>We love our family, &nbsp;friends, &nbsp;and fans.</h4>
-            </div>
-		    
 		</section>
 		
    		
@@ -110,8 +115,13 @@
 				</div>
 			</div>
 		</footer>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
         <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+        
+        <script src="resources/js/script.js"></script>
+        
         <script>
             CKEDITOR.replace('editor1');
         </script>

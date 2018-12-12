@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		
 		<title>BOXER</title>
 	</head>
@@ -23,6 +24,9 @@
 						BOXER
 					</a>
 				</div>
+				<a class="mobile-nav-icon js--nav-icon">
+					<i class="fas fa-bars fa-2x"></i>
+				</a>
 				<ul class="nav-links">
 					<li><a href="about.html" class="about-link">About</a></li>
 					<li><a href="#" class="music-link active active-music">Music</a></li>
@@ -35,25 +39,26 @@
 		
 		<!-- Music Page -->
 		<section id="music" class="nav-avoid">
-			<!--Music page header-->
-			<div class="header music-header">
-				<div class="container">
-					<h1 class="header-title music-text">OUR &nbsp; MUSIC</h1>
+			<div class="music-mobile-correct">
+				<!--Music page header-->
+				<div class="header music-header">
+					<div class="container">
+						<h1 class="header-title music-text">OUR &nbsp; MUSIC</h1>
+					</div>
+					<img class="header-img-splash" src="resources/img/BoxerLogoCrop.png" alt="Boxer Logo">
 				</div>
-				<img class="header-img-splash" src="resources/img/BoxerLogoCrop.png" alt="Boxer Logo">
-			</div>
-            <div class="video-group container">
-               <div class="video-body">
-                   <p class="video-text">
-                      <i class="fas fa-quote-left"></i>
-                       <span class="big music-text">&nbsp;On the cusp</span>&nbsp;  of our one year anniversary of being a band we wanted to capture our hard work from starting rehearsal - playing on the stage - being in the studio. As the song says, we’ll <em class="music-text">“Stay Up”</em> and always keep at it. <br><br>Thank you everyone who has supported us this far and continue to do so. We won’t let ya down. <span class="underline music-text">Stay Up Everyone!</span>"<br><cite>&mdash;The Band</cite>
-                   </p>
-               </div>
-                <div id="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P_nvtNwnhIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            </div>
-			<div class="announcement-group" id="pah">
+				<div class="video-group container">
+				   <div class="video-body">
+					   <p class="video-text">
+						  <i class="fas fa-quote-left"></i>
+						   <span class="big music-text">&nbsp;On the cusp</span>&nbsp;  of our one year anniversary of being a band we wanted to capture our hard work from starting rehearsal - playing on the stage - being in the studio. As the song says, we’ll <em class="music-text">“Stay Up”</em> and always keep at it. <br><br>Thank you everyone who has supported us this far and continue to do so. We won’t let ya down. <span class="underline music-text">Stay Up Everyone!</span>"<br><cite>&mdash;The Band</cite>
+					   </p>
+				   </div>
+					<div id="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/P_nvtNwnhIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				</div>
+				<div class="announcement-group" id="pah">
 					<div class="music-icon-3x">
 						<i class="fas fa-microphone-alt fa-3x"></i>
 					</div>
@@ -61,6 +66,8 @@
 						<p>The band plans on hitting the studio once again for a <span class="pah">5 track EP</span> coming soon to a streaming service near you, but keep a look out for another single slated for the winter titled <span class="pah">"Principle and Heart"</span>.</p>	
 					</div>
 				</div>
+			</div>
+			
 			
 			
 			
@@ -95,5 +102,10 @@
 				</div>
 			</div>
 		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="resources/js/script.js"></script>
+		
+		
 	</body>
 </html>

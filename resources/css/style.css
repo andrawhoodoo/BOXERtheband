@@ -111,6 +111,10 @@ a:visited {
 /*-----NAVIGATION-----*/
 /********************/
 
+.mobile-nav-icon {
+	display: none;
+}
+
 nav {
 	position: fixed;
 	width: 100%;
@@ -264,15 +268,15 @@ nav {
 }
 
 #about {
-    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/JonesBeachBand.jpeg');
+    background-image: url('img/JonesBeachBand.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 	border: 1px solid #000;
-
-
 }
-
+.mobile-correct {
+		background: rgba(0, 0, 0, 0.7);
+}
 .band-title {
     font-size: 85%;
 }
@@ -385,11 +389,15 @@ nav {
 }
 
 #music {
-	background-image: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)), url('img/Duo.jpeg');
+	background-image: url('img/Duo.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 	border: 1px solid #000;
+}
+
+.music-mobile-correct {
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .pah {
@@ -478,7 +486,7 @@ nav {
 }
 
 #events {
-    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/GrayLennyCrop.jpg');
+    background-image: url('img/GrayLennyCrop.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -568,7 +576,7 @@ nav {
 }
 
 #contacts {
-    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url('img/TailgateCrop.jpg');
+    background-image: url('img/TailgateCrop.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
