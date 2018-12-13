@@ -1,9 +1,9 @@
-@media(max-width: 1200px) {
+@media all and (max-width: 1200px) {
 	
 	/***********************/
 	/*****REUSABLE ITEMS****/
 	/***********************/
-	
+	.header-img-splash { margin-right: 0; }
 	.header-title {
 		font-size: 250%;
 		font-weight: bold;
@@ -22,7 +22,7 @@
 	}
 }
 
-@media(max-width: 1000px) {
+@media all and (max-width: 1000px) {
 	
 	/***********************/
 	/******LINKS************/
@@ -111,15 +111,19 @@
 	.stay-up-header {
 		font-size: 600%;
 		margin-left: 20%;
-	}	
+	}
+	
+	#about .quote-group {
+		width: 100%;
+	}
 }
 
-@media(max-width: 900px) {
-	
-	
-	.header-img-splash { margin-right: 0; }
-	
-	.header-title { margin-left: -40px; }
+@media all and (max-width: 900px) {
+	.header-title { 
+		margin-left: -40px;
+		font-size: 190%;
+		padding-top: 25px;
+	}
 	
 	/*****about********/
 	.blurb { font-size: 90%;}
@@ -127,9 +131,8 @@
 	#our-story {
 		padding: 30px 20px;
 	}
-
 	
-	.quote-group { margin-left: -40px !important; }
+	#about .quote-group { width: 110% !important; }
 	
 	.quote-text {
 		width: 70%;
@@ -205,11 +208,15 @@
 	}
 }
 
-
-@media(max-width: 800px) {	
+@media all and (max-width: 800px) {	
 	
 	#main-page {
 		margin-left: -225px;
+	}
+	
+	#our-story {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	.blurb {
@@ -227,10 +234,7 @@
 		font-weight: bold;
 	}
 	
-	.quote-group {
-		margin-left: -80px !important;
-		width: 500px;
-	}
+	#about .quote-group { margin-left: -80px; }
 	
 	.quote-icon-5x {
 		display: none;
@@ -258,8 +262,17 @@
 		margin-left: 27px;
 		width: 670px;
 	}
-	
-	
+	#events .events-bg {
+		height: 50px;
+	}
+	#events .header-img-splash {
+		margin-top: 0px;
+		width: 188px;
+	}
+	#events .events-text { 
+		font-size: 160%;
+		padding-top: 16px;
+	}
 	#events-list li div span { 
 		margin-left: 40%;
 		margin-bottom: 10px;
@@ -287,19 +300,24 @@
 	}
 }
 
-
-
-@media(max-width: 550px) {
+@media all and (max-width: 650px) {
+	#events .header-img-splash { display: none; }
+}
+@media all and (max-width: 550px) {
 	.footer-normal-i { display: none; }
 	.footer-small-i { 
 		display: inline;
 		padding-left: .5em;
 		padding-right: .5em;
 	}
+	
+	#about .quote-container {
+		margin-left: 0px;
+		margin-right: 0px; 
+	}
 }
 
-
-@media(max-width: 480px) {
+@media all and (max-width: 480px) {
 	#logo-name {margin-left: -50px; }
 	.logo img { 
 		margin-right: 0px;
@@ -335,8 +353,7 @@
 		font-size: 70%;
 	}
 	
-	.quote-group { 
-		width: 350px;
+	#about .quote-group { 
 		margin-top: 40px;
 		margin-left: -30px !important;
 	}
@@ -407,6 +424,38 @@
         font-size: 100%;
     }
 }
+
+@media all and (max-width: 440px) {
+	#about .quote-text {
+		width: 75%;
+	}
+	#about #our-story {
+		line-height: 1.6em;
+	}
+	#about #our-story h2 { 
+		margin-left: 0px;
+		font-size: 180%;
+	}
+	#about .story-container { 
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
