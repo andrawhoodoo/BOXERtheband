@@ -284,9 +284,9 @@
 	}
 	
 	#events-list { width: 550px; }
+	#events-list li {padding: 0 3px;}
 	
-	#events-list li { padding-right: 15px; }
-	
+	#events-list ul li div img { display: inline; }
 	#events-list li div div h3,
 	#events-list li div div h4,
 	#events-list li div div p { margin-left: 40%; }
@@ -305,17 +305,38 @@
 }
 
 @media all and (max-width: 700px) {
+	#events-list ul li div img { display: none; }
+	#events-list { width: 100%; }
+	#events-list ul li {width: 100%; }
+	#events-list li div div h2,
+	#events-list li div div h3,
+    #events-list li div div h4,
+    #events-list li div div p { 
+		width: 100%;
+		margin: 0px auto;
+	}
+	#events-list li div span { 
+		position: relative;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		right: 0;
+	}
 	.music-icon-3x { display: inline;}
 	.video-text .big { font-size: 200%; }
 	#video-container {width: 450px;}
 }
 
 @media all and (max-width: 650px) {
+	#events .header-title { font-size: 160%;}
 	#events .header-img-splash { display: none; }
 	.music-icon-3x { display: none;}
 	#video-container {width: 100%;}
 }
 @media all and (max-width: 550px) {
+	#events .header-title { font-size: 160%;}
+	#events-list ul li{font-size: 15px;}
+	
 	.footer-normal-i { display: none; }
 	.footer-small-i { 
 		display: inline;
@@ -390,23 +411,16 @@
         width: 300px;
     }
 	#music .ep { width: 85%; }
+	#events .header-title { font-size: 100%;}
     #events-list { 
-        width: 360px;
+        
         margin-top: 50px;
     }
     #events-list ul li { margin-bottom: 50px;}
-    #events-list li div div h3,
-    #events-list li div div h4,
-    #events-list li div div p { margin-left: 15px;}
-    #events-list ul li div img { display: none; }
-    #events-list li div span { 
-        margin-left: 120px;
-        margin-right: 80px;
-        width: 200px;
-    }
+    
+    
     #events-list li div div h2 { 
-        margin-left: 80px;
-        width: 200px;
+        padding-left: 3px;
     }
     .contact-form-header { width: 80%; }
     #contact-form { width: 360px; }
@@ -435,6 +449,7 @@
 }
 
 @media all and (max-width: 440px) {
+	
 	#about .quote-text {
 		width: 75%;
 	}
@@ -451,6 +466,12 @@
 	}
 	.video-text{ font-size: 75%;}
 	.video-text cite { margin-left: 60%;}
+	#events .header-title { font-size: 75%;}
+	footer .container {margin: 0;}
+	.footer-small-i { 
+		padding-left: .1em;
+		padding-right: .1em;
+	}
 }
 
 
