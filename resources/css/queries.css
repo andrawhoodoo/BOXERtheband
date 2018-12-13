@@ -197,12 +197,12 @@
 	}
 	
 	.wysiwyg {
-		margin-left: 120px;
-		width: 350px;
-		height: 250px;
+		width: 100%;
+		margin-left: 0%;
 	}
+	.message-group label {display: none;}
 
-	.submit-button { margin-left: 370px; }
+	.submit-button { margin-left: 80%; }
 
 	.message-group label {
 		top: 20px;
@@ -293,10 +293,6 @@
 	
 	#events-list li div div h2 { margin-left: 45%;}
 	
-	#contacts { 
-		background-position: -360px;
-	}
-	
 	.shout-out {
 		font-size: 150%;
 		margin-top: 330px;
@@ -325,6 +321,8 @@
 	.music-icon-3x { display: inline;}
 	.video-text .big { font-size: 200%; }
 	#video-container {width: 450px;}
+	.contact-form-header { width: 80%; }
+    #contact-form { width: 80%; }
 }
 
 @media all and (max-width: 650px) {
@@ -332,8 +330,11 @@
 	#events .header-img-splash { display: none; }
 	.music-icon-3x { display: none;}
 	#video-container {width: 100%;}
+	.submit-button { margin-left: 70%; }
+
 }
 @media all and (max-width: 550px) {
+	#contacts { background-position: 42%;}
 	#events .header-title { font-size: 160%;}
 	#events-list ul li{font-size: 15px;}
 	
@@ -352,6 +353,9 @@
 		width: 80%;
 	}
 	.video-text .big { font-size: 175%; }
+	.submit-button { margin-left: 60%; }
+
+	
 }
 
 @media all and (max-width: 480px) {
@@ -422,8 +426,11 @@
     #events-list li div div h2 { 
         padding-left: 3px;
     }
-    .contact-form-header { width: 80%; }
-    #contact-form { width: 360px; }
+	.form-container {
+		margin-left: 0;
+		margin-right: 0;
+	}
+    
     .input-group label,
     .input-group .message-group { width: 100%; }
     .input-group {text-align: center;}
@@ -437,15 +444,16 @@
         width: 288px;
         margin-left: -20px;
     }
-    .wysiwyg { 
-        margin-top: 80px;
-        margin-left: -45px;
-    }
-    .submit-button { margin-left: 75%; }
+    
+    .submit-button { margin-left: 50%; }
     .shout-out { 
         margin-bottom: 265px;
         font-size: 100%;
     }
+	.wysiwyg { 
+		width: 110%;
+		margin-left: -40px;
+	}
 }
 
 @media all and (max-width: 440px) {
@@ -471,6 +479,23 @@
 	.footer-small-i { 
 		padding-left: .1em;
 		padding-right: .1em;
+	}
+	
+	
+	.wysiwyg { 
+        margin-top: 20px;
+		width: 130%;
+		margin-left: -40px;
+    }
+}
+
+@media all and (max-width: 300px) {
+	.wysiwyg { width: 170%; }
+	.submit-button { margin-left: 25%; }
+	.header-title {font-size: 110%}
+	.stay-up-header {
+		font-size: 220%;
+		margin-left: 35%;
 	}
 }
 
