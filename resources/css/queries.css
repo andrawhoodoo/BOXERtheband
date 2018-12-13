@@ -153,19 +153,22 @@
 	/*****music********/
 	.announcement-group {
 		margin-left: 70px;
-		width: 700px;
-
+		width: 90%;
 	}
 	
 	.music-icon-3x {
 		padding: 30px 30px;
 		left: 39px;
+		background: none;
 	}
 	
 	.ep {
 		padding-right: 20px;
 	}
+	.video-text { width: auto;}
 	
+	iframe { width: 100%;}
+	#video-container { width: 80%;}
 	/*****events*******/
 	#events-list { width: 700px; }
 	
@@ -250,17 +253,18 @@
 		left: 10px;
 		top: 10px;
 	}
+	.video-text .big { font-size: 300%;	}
 	
+	#video-container {width: 500px;}
 	.quote-group cite { margin-left: 45%; }
 
 	.music-icon-3x {
 		padding: 18px 20px;
-		left: 53px;
+		left: 4%;
 	}
 	
 	.announcement-group {
 		margin-left: 27px;
-		width: 670px;
 	}
 	#events .events-bg {
 		height: 50px;
@@ -300,8 +304,16 @@
 	}
 }
 
+@media all and (max-width: 700px) {
+	.music-icon-3x { display: inline;}
+	.video-text .big { font-size: 200%; }
+	#video-container {width: 450px;}
+}
+
 @media all and (max-width: 650px) {
 	#events .header-img-splash { display: none; }
+	.music-icon-3x { display: none;}
+	#video-container {width: 100%;}
 }
 @media all and (max-width: 550px) {
 	.footer-normal-i { display: none; }
@@ -315,6 +327,10 @@
 		margin-left: 0px;
 		margin-right: 0px; 
 	}
+	.announcement-group {
+		width: 80%;
+	}
+	.video-text .big { font-size: 175%; }
 }
 
 @media all and (max-width: 480px) {
@@ -360,27 +376,20 @@
 	
 	.quote-group cite { margin-left: 0px;}
     .video-text { 
-        width: 360px;
         padding: 15px; 
         font-size: 18px;
     }
-    .video-text .big { font-size: 250%; }
+    .video-text .big { font-size: 150%; }
     .video-text cite { margin-left: 70%; }
     #video-container { 
-        width: 400px;
         padding: 0px;
-        margin-left: -20px;
     }
-    iframe {width: 360px; }
+
     .quote-text {
         margin-left: 15%;
         width: 300px;
     }
-    .music-icon-3x {
-        background: none;
-        left: 2%;
-        top: 10%;
-    }
+	#music .ep { width: 85%; }
     #events-list { 
         width: 360px;
         margin-top: 50px;
@@ -440,6 +449,8 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+	.video-text{ font-size: 75%;}
+	.video-text cite { margin-left: 60%;}
 }
 
 
