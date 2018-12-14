@@ -52,23 +52,26 @@
 					</div>
 					<div id="contact-form">
                         <form method="post" action="resources/php/mailer.php">
-                          <!--
                            <div class="submit-response-table table">
-                                    <div class="tableRow">
-                                       <div class="form-messages success">
-                                            We got it! Your message has been sent.
-                                        </div>
-                                    </div>
-                                   <div class="tableRow">  
-                                       <div class="form-messages error">
-                                            Sorry, something went wrong. Please try again.
-                                        </div>
-                                   </div>
-                              </div>
-                              -->
+                           		<?php
+                                   if($_GET['success'] == 1) {
+                                       echo "<div class=\"tableRow\">
+                                                <div class=\"form-messages success\">
+                                                    We got it! Your message has been sent.
+                                                </div>
+                                            </div>";
+                                   }
+                                   if($_GET['success'] == -1) {
+                                       echo "<div class=\"tableRow\">
+                                                <div class=\"form-messages error\">
+                                                    Sorry, something went wrong. Please try again.
+                                                </div>
+                                            </div>";
+                                   }
+                                ?>
+                           </div>
                             <div class="contact-form-body table">
-                              
-                               
+                                
                                 <div class="input-group tableRow">
                                     <label for="name" class="col contacts-bg contacts-text"><i class="fas fa-user"></i>&nbsp; Name:</label>
                                     <div class="input-holder col">
@@ -141,14 +144,9 @@
 		</footer>
        
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        
-        <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
-        
         <script src="resources/js/script.js"></script>
         
-        <script>
-            CKEDITOR.replace('editor1');
-        </script>
+
         
 	</body>
 </html>
