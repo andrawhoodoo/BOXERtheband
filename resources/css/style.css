@@ -383,6 +383,43 @@ nav {
 	display: none;
 }
 
+
+#modal {
+	display: none;
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	align-content: center;
+	z-index: 10000;
+}
+
+#modal i {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+.modal-container {
+	position: relative;
+	max-width: 720px;
+	width: 50%;
+	margin-left: 25%;
+	background: #DFB992;
+	align-content: center;
+}
+
+#modal img {
+	width: 100%;
+}
+
+#modal-img-lenny,
+#modal-img-andrew,
+#modal-img-dave, 
+#modal-img-johnny {
+	padding: 15px;
+	display: none;
+}
+
 /********************/
 /*------MUSIC-------*/
 /********************/
@@ -581,8 +618,8 @@ nav {
     margin-top: 50px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.7);
-    text-decoration: underline;
-    font-size: 150%;
+	font-style: italic;
+    font-size: 130%;
     width: 45%;
     margin-left: auto;
 	margin-right: auto;

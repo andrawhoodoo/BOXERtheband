@@ -59,28 +59,28 @@
 					<div class="tableRow">
 						<div class="col band-display-group">
 							<div class="container about-col-container">
-								<img src="resources/img/LennyCrop.jpeg" alt="Lenny" class="bandmate-img">
+								<img src="resources/img/LennyCrop.jpeg" alt="Lenny" class="bandmate-img" onclick="openModal(1)">
 								<h4 class="band-title lenny-text">Lenny Sadowsky</h4>
 								<p class="bandmate-description lenny-text">(vocals/rhythm guitar)</p>
 							</div>          
 						</div>
 						<div class="col band-display-group">
 							<div class="container music-col-container">
-								<img src="resources/img/AndrewCrop.jpeg" alt="Andrew" class="bandmate-img">
+								<img src="resources/img/AndrewCrop.jpeg" alt="Andrew" class="bandmate-img" onclick="openModal(2)">
 								<h4 class="band-title music-text">Andrew Friedman</h4>
 								<p class="bandmate-description music-text">(lead guitar)</p>
 							</div>	            
 						</div>
 						<div class="col band-display-group">
 							<div class="container events-col-container">
-								<img src="resources/img/DaveCrop.jpeg" alt="Dave" class="bandmate-img">
+								<img src="resources/img/DaveCrop.jpeg" alt="Dave" class="bandmate-img" onclick="openModal(3)">
 								<h4 class="band-title events-text">Dave Wolfson</h4>
 								<p class="bandmate-description events-text">(bass guitar)</p>
 							</div>		            
 						</div>
 						<div class="col band-display-group">
 							<div class="container contacts-col-container">
-								<img src="resources/img/JohnnyCrop.jpeg" alt="Johnny" class="bandmate-img">
+								<img src="resources/img/JohnnyCrop.jpeg" alt="Johnny" class="bandmate-img" onclick="openModal(4)">
 								<h4 class="band-title contacts-text">Johnny Pots</h4>
 								<p class="bandmate-description contacts-text">(drums)</p>
 							</div>
@@ -156,8 +156,61 @@
 			</div>
 		</footer>
 		
+		<!--Modals-->
+		<section id="modal">
+			<div class="container modal-container">
+				<i class="fas fa-times fa-2x" onclick="closeModal()"></i>
+				<div id="modal-img-lenny">
+					<img src="resources/img/LennyCrop.jpeg" alt="Lenny" class="modal-img">
+				</div>
+				<div id="modal-img-andrew">
+					<img src="resources/img/AndrewCrop.jpeg" alt="Andrew" class="modal-img">
+				</div>
+				<div id="modal-img-dave">
+					<img src="resources/img/DaveCrop.jpeg" alt="Dave" class="modal-img">
+				</div>
+				<div id="modal-img-johnny">
+					<img src="resources/img/JohnnyCrop.jpeg" alt="Johnny" class="modal-img">
+				</div>
+			</div>
+		</section>
+		
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="resources/js/script.js"></script>
+		<script>
+			
+			let currentImage = null;
+			
+			function openModal(x) {
+				console.log("foo")
+				document.getElementById('modal').style.display = "block";
+				showImg(x);
+			}
+			
+			function closeModal() {
+				document.getElementById('modal').style.display = "none";
+				currentImage.style.display = "none";
+				
+				
+			}
+			
+			function showImg(x) {
+				if(x===1) {
+					currentImage = document.getElementById('modal-img-lenny');
+				}
+				else if(x===2) {
+					currentImage = document.getElementById('modal-img-andrew');
+				}
+				else if(x===3) {
+					currentImage = document.getElementById('modal-img-dave');
+				}
+				else currentImage = document.getElementById('modal-img-johnny');
+				
+				currentImage.style.display = "block";
+			}
+		</script>
 		
 	</body>
 </html>

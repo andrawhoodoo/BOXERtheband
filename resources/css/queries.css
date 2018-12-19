@@ -98,6 +98,16 @@
 	
 	
 	/***********************/
+	/*****ABOUT PAGE*********/
+	/***********************/
+	
+	.modal-container {
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	
+	/***********************/
 	/*****MAIN PAGE*********/
 	/***********************/
 	
@@ -323,6 +333,10 @@
 	#video-container {width: 450px;}
 	.contact-form-header { width: 80%; }
     #contact-form { width: 80%; }
+	.modal-container {
+		width: 70%;
+		margin-left: 15%;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -354,7 +368,10 @@
 	}
 	.video-text .big { font-size: 175%; }
 	.submit-button { margin-left: 60%; }
-
+	.modal-container {
+		width: 80%;
+		margin-left: 10%;
+	}
 	
 }
 
@@ -403,6 +420,11 @@
 	#about .quote-group { 
 		margin-top: 40px;
 		margin-left: -30px !important;
+	}
+	
+	.modal-container {
+		width: 100%;
+		margin-left: 0;
 	}
 	
 	.quote-group cite { margin-left: 0px;}

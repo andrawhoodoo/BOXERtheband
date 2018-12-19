@@ -48,7 +48,7 @@
 
 				<div class="container form-container">	
 					<div class="contact-form-header">
-						<h2>Feel free to send us a message!<span class="header-icon"><i class="fas fa-pencil-alt"></i></span></h2>
+						<h2 class="contacts-text">Feel free to send us a message!<span class="header-icon"><i class="fas fa-pencil-alt"></i></span></h2>
 					</div>
 					<div id="contact-form">
                         <form method="post" action="resources/php/mailer.php">
