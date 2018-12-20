@@ -458,7 +458,6 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
-    .input-gourp label { text-align: left; }
     .input-group label,
     .input-group .message-group { width: 100%; }
     .input-group {text-align: center;}
@@ -472,7 +471,7 @@
         width: 288px;
         margin-left: -20px;
     }
-    
+    .input-group label { text-align: left; }
     .submit-button { margin-left: 50%; }
     .shout-out { 
         margin-bottom: 265px;
