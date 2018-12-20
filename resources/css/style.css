@@ -112,6 +112,14 @@ a:visited {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
 /********************/
 /*-----NAVIGATION-----*/
 /********************/
@@ -385,7 +393,6 @@ nav {
 
 
 #modal {
-	display: none;
 	position: fixed;
 	top: 20px;
 	width: 100%;
@@ -417,7 +424,6 @@ nav {
 #modal-img-dave, 
 #modal-img-johnny {
 	padding: 15px;
-	display: none;
 }
 
 /********************/
