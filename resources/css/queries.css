@@ -471,14 +471,17 @@
         width: 288px;
         margin-left: -20px;
     }
-    .input-group label { text-align: left; }
+    .input-group label { 
+        text-align: left;
+        padding-left: 10px;
+    }
     .submit-button { margin-left: 50%; }
     .shout-out { 
         margin-bottom: 265px;
         font-size: 100%;
     }
 	.wysiwyg { 
-		width: 110%;
+		width: 325px;
 		margin-left: -40px;
 	}
 }
@@ -511,13 +514,13 @@
 	
 	.wysiwyg { 
         margin-top: 20px;
-		width: 130%;
+		width: 145%;
 		margin-left: -40px;
     }
 }
 
 @media all and (max-width: 300px) {
-	.wysiwyg { width: 170%; }
+	.wysiwyg { width: 170% }
 	.submit-button { margin-left: 25%; }
 	.header-title {font-size: 110%}
 	.stay-up-header {
